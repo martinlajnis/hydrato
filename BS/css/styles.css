@@ -1,0 +1,327 @@
+/* Estilos genera0les */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}   
+ul{
+    padding-left: 35px;
+    padding-top: 20px;
+    height: 0px;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    font-weight: 300;
+    text-decoration: none;
+    color: #050606;
+}
+ul li a:hover{
+    font-weight: 300;
+    text-decoration: none;
+    color: #5CB087;
+}
+.home ul li a{
+    font-weight: 300;
+    text-decoration: none;
+    color: #64BC99;
+}
+
+/* Animaciones */
+
+@-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+@-webkit-keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+/* Estilos por sección */ 
+.home{
+    background-color:  #010101;
+    background: center cover no-repeat;
+    background-image: url(../img/Portfolio-12.png);
+}
+.soft_grey{
+    background-color: #F3EEEB;
+}
+.strong_grey{
+    background-color: #C4C3C3;
+}
+
+/*Home*/
+.home ul li a{
+    font-weight: 300;
+    text-decoration: none;
+    color: #64BC99;
+}
+.home_main{
+    height: 350px;
+}
+.home h1 {
+    font-weight: bold;
+    font-size: 5rem;
+    color: #F3EEEB;
+    margin-bottom: -1rem;
+}
+.home main h2{
+    letter-spacing: -1px;
+    font-size: 38px;
+    color:#64BC99
+}
+main p{
+    font-weight: 500;
+    color: #050606;
+}
+.home_icons{
+    display: grid;
+    grid-template-columns: auto;
+    align-content: center;
+    grid-template-rows: auto;
+    position: absolute;
+    bottom: 15%;
+    left: 95%;
+}
+.home_icons .icon{
+    color: #050606;
+}
+.home_icons div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 50%;
+    background-color: #B1F8D5;
+}
+.home_icons div:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 50%;
+    background-color: #EAABCE;
+}
+
+.home_icons .icon-linkedin{
+    display: flex;
+    justify-content: center;
+}
+
+/*Skills*/
+
+
+.skills_main{
+    height: 400px;
+}
+
+.skills_list{
+    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    display: flex;
+    flex-flow: row wrap; 
+    width: 450px;
+    height: 200px;
+}
+.skills_list div{
+    background-color: #B1F8D5;
+    width: 200px;
+    height: 35px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .skills_text{
+    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    display: block; 
+    float: left;
+    width: 500px;
+}
+main .skills_text h2{
+    text-align: left;
+    font-size: 50px;
+}
+.skills_list div span{
+    color: #5CB087;
+    font-weight: 700;
+}
+
+/*My work*/
+
+.work{
+    display: block;
+    float: left;
+    text-align: center;
+    width: auto;
+    height: 10rem;
+    text-align: left;
+    padding: 30px;
+}
+.work .preview_work{
+    width: auto;
+    height: 7rem;
+    display: block;
+    background-color: #EAABCE;
+}
+.work h2{
+    font-size: 1.4rem;
+}
+.work p{
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/*About Me*/
+
+.main_about{
+    height: 400px;
+}
+.about .icon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    background-color: #EAABCE;
+}
+.about p{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.about h2{
+    font-size: 1.6rem;
+}
+
+/*Contact*/
+.form_main{
+    height: 350px;
+}
+
+.form{
+    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    grid-area: form;
+    width: 400px;
+    padding: 10px;
+}
+.contact{
+    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    grid-area: contact;
+    padding: 10px;
+    width: 300px;
+    height: 100px;
+}
+.contact h2{
+    font-size: 1.7rem;
+}
+
+/*Formulario*/
+.form_style{
+    background-color: #B1F8D5;
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #5CB087;
+    padding: 10px;
+    width: 270px;
+    margin-bottom: 15px;
+    height: 35px;
+}
+.form_style::placeholder{
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #5CB087;
+    opacity: 1;
+    text-align: left;
+}
+.text_area{
+    height: 130px;
+    margin-bottom: 0px;
+}
+.form_style textarea::placeholder{
+    font-family: 'Poppins';
+    font-weight: 700;
+    scroll-behavior: none;
+}
+.send_button{
+    border: none;
+    display: flex;
+    float: right;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 18px;
+    color: #5CB087;
+    background: none;
+}
+
+/* Footer */
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #050606;
+    color: #C4C3C3;
+    padding: 10px 0;
+}
+footer div h2{
+    padding-left: 10px;
+    font-size: 20px;
+}
+footer div p{
+    padding-left: 10px;
+    font-size: 13px;
+    font-weight: 300;
+}

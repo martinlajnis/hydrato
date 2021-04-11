@@ -1,0 +1,19 @@
+img{
+	max-width: 100%;
+}
+.gallery
+{
+	padding: 80px 0;
+}
+.gallery img{
+	/*armamos el fondo o borde blanco*/
+	background-color: #ffffff;
+	padding: 15px;
+	width: 100%;
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+/*el modal de la imagen */
+#gallery-modal .modal-img{
+	width: 100%;
+}
