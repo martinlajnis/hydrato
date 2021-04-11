@@ -32,7 +32,12 @@ header{
     z-index: 9;
        .logo{
             display: inline-block;
-		    vertical-align: middle;}
+		    vertical-align: middle;
+        @media (max-width: 768px){
+          display: none;
+        }
+      }
+        
        .boton:hover{
            font-weight: bold;
        }
@@ -57,6 +62,9 @@ header{
         .nav-header a{
             color: $nav_color;
             padding: 30px;
+            @media (max-width: 768px){
+              font-size: 13px;
+            }
         }
         header li {
             display: inline-block;
@@ -67,16 +75,21 @@ header{
             text-align:center;
             font: $main_font 16px;
         }
-           .nav-header ul 
+        .nav-header ul 
 	    {
 	        display: flex;
 	        flex-direction: row;
 	        justify-content: center;
 	        align-items: center; 
-            margin-bottom: 0;
+          margin-bottom: 0;
 	}
-       
+       .ig 
+       {
+       @media (max-width: 768px){
+        display: none;
+      }
     }
+  }
 
 /*Main*/
 main{
