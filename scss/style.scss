@@ -867,21 +867,17 @@ section#donde  {
 }
 
 /* footer social icons */
+/*=========================
+  Icons
+ ================= */
 
+ *{
+  margin: 0;
+  padding: 0;
+}
 
     .social-network{
-    a.icoFacebook:hover {
-      background-color: #3B5998;
-}
-    a.icoTwitter:hover {
-      background-color: #33ccff;
-}
-    a.icoMedium:hover {
-      background-color: #00AB6C;
-}
-    a.icoQuora:hover {
-      background-color: #AA2200;
-}
+
     a.icoLinkedin:hover {
       background-color: #007bb7;
 }
