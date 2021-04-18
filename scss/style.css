@@ -451,6 +451,12 @@ section#quien .titulo {
   margin-top: 12px;
 }
 
+@media (max-width: 768px) {
+  section#quien .titulo {
+    font-size: 15px;
+  }
+}
+
 section#quien .cuadrado {
   -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -495,47 +501,147 @@ section#quien h4 {
   padding: 1%;
 }
 
-/*Servicios*/
-section#servicios {
-  height: 400px;
-}
-
-section#servicios p {
-  margin-left: 40px;
-  margin-right: 40px;
-}
-
-section#servicios h2 {
-  font: bold 30px "Roboto", sans-serif;
-}
-
 @media (max-width: 768px) {
-  section#servicios h2 {
-    font-size: 14px;
+  section#quien h4 {
+    font-size: 17px;
   }
 }
 
-section#servicios h3 {
-  font: 16px "Roboto", sans-serif;
-  color: #5bc0be;
+/*Servicios
+
+section#servicios{
+    height: 400px;
+
+    p{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    h2{
+        font: bold 30px $main_font;
+        @media (max-width: 768px){
+          font-size: 14px;
+        }
+    }
+
+    h3{
+        font: 16px $main_font;
+        color: $circulo_color;
+    }
+
+    .icon{
+        @include rotate-in-diag-2;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+        background-color: $circulo_color;
+    }
+}*/
+/*Servicios 2*/
+body {
+  margin-top: 20px;
 }
 
-section#servicios .icon {
-  -webkit-animation: rotate-in-diag-2 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: rotate-in-diag-2 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 10rem;
-  width: 10rem;
+/* Feature Box
+---------------------*/
+.feature-box-1 {
+  padding: 32px;
+  -webkit-box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+          box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+  margin: 15px 0;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-transition: ease all 0.35s;
+  transition: ease all 0.35s;
+  top: 0;
+}
+
+.feature-box-1 * {
+  -webkit-transition: ease all 0.35s;
+  transition: ease all 0.35s;
+}
+
+.feature-box-1 .icon {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  background: #fc5356;
+  color: #ffffff;
+  text-align: center;
   border-radius: 50%;
-  background-color: #5bc0be;
+  margin-bottom: 22px;
+  font-size: 27px;
+}
+
+.feature-box-1 .icon i {
+  line-height: 70px;
+}
+
+.feature-box-1 h5 {
+  color: #20247b;
+  font-weight: 600;
+}
+
+.feature-box-1 p {
+  margin: 0;
+}
+
+.feature-box-1:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  border-radius: 10px;
+  width: 0;
+  background: #20247b;
+  z-index: -1;
+  -webkit-transition: ease all 0.35s;
+  transition: ease all 0.35s;
+}
+
+.feature-box-1:hover {
+  top: -5px;
+}
+
+.feature-box-1:hover h5 {
+  color: #ffffff;
+}
+
+.feature-box-1:hover p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.feature-box-1:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  left: 0;
+  right: auto;
+}
+
+.section {
+  padding: 100px 0;
+  position: relative;
+}
+
+.section-title {
+  padding-bottom: 45px;
+}
+
+.section-title h2 {
+  font-weight: 700;
+  color: #20247b;
+  font-size: 45px;
+  margin: 0 0 15px;
+  border-left: 5px solid #fc5356;
+  padding-left: 15px;
 }
 
 /*Galeria*/
@@ -544,22 +650,6 @@ section#galeria {
 }
 
 /*Form*/
-/*section#contacto 
-  { background:$fondo_seccion2; 
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-      }
-      
-      .form-floating{
-        margin: 30px;
-        padding: 10px;
-    }
-    
-        .form-floating>.form-control
-    {
-        width: 400px;
-        }*/
 section#contacto {
   /*---------------------------------------------*/
   /*---------------------------------------------*/
@@ -729,7 +819,7 @@ section#contacto .container-contact100 {
       -ms-flex-align: center;
           align-items: center;
   padding: 15px;
-  background: #a64bf4;
+  background: #ffffff;
   background: -webkit- linear-gradient(45deg, #00dbde, #9232ff);
   background: -o- linear-gradient(45deg, #00dbde, #9232ff);
   background: -moz- linear-gradient(45deg, #00dbde, #9232ff);
@@ -1107,47 +1197,64 @@ section#donde h5 {
 }
 
 /**Footer**/
+/*=========================
+  Icons
+ ================= */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* footer social icons */
 .footer {
   background-color: #FAFCFF;
   padding: 20px 0;
   text-align: center;
-  /* footer social icons */
-  /*=========================
-  Icons
- ================= */
 }
 
-.footer ul.social-network {
+ul.social-network {
   list-style: none;
   display: inline;
   margin: auto;
 }
 
-.footer ul.social-network li {
+ul.social-network li {
   display: inline;
   margin: 0 10px;
 }
 
-.footer * {
-  margin: 0;
-  padding: 0;
+/* footer social icons */
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
 }
 
-.footer .social-network a.icoLinkedin:hover {
+.social-network a.icoTwitter:hover {
+  background-color: #33ccff;
+}
+
+.social-network a.icoMedium:hover {
+  background-color: #00AB6C;
+}
+
+.social-network a.icoQuora:hover {
+  background-color: #AA2200;
+}
+
+.social-network a.icoLinkedin:hover {
   background-color: #007bb7;
 }
 
-.footer .social-network a.icoInstagram:hover {
+.social-network a.icoInstagram:hover {
   background: #f09433;
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
 }
 
-.footer .social-network a.icoRss:hover i, .footer .social-network a.icoFacebook:hover i, .footer .social-network a.icoTwitter:hover i, .footer .social-network a.icoMedium:hover i, .footer .social-network a.icoVimeo:hover i, .footer .social-network a.icoLinkedin:hover i {
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i, .social-network a.icoMedium:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
   color: #fff;
 }
 
-.footer .social-circle li a {
+.social-circle li a {
   display: inline-block;
   position: relative;
   margin: 0 auto 0 auto;
@@ -1158,13 +1265,13 @@ section#donde h5 {
   font-size: 22px;
 }
 
-.footer .social-circle li i {
+.social-circle li i {
   margin: 0;
   line-height: 60px;
   text-align: center;
 }
 
-.footer .social-circle li a:hover i, .footer .triggeredHover {
+.social-circle li a:hover i, .triggeredHover {
   -moz-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   -ms--transform: rotate(360deg);
@@ -1173,29 +1280,29 @@ section#donde h5 {
   transition: all 0.2s;
 }
 
-.footer .social-circle i {
+.social-circle i {
   color: #fff;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
 
-.footer .social-circle a {
+.social-circle a {
   background-color: #CCD8EA;
 }
 
 @media screen and (max-width: 500px) {
-  .footer ul.social-network li {
+  ul.social-network li {
     display: inline;
     margin: 0 5px;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .footer ul.social-network li {
+  ul.social-network li {
     display: inline;
     margin: 0 5px;
   }
-  .footer .social-circle li a {
+  .social-circle li a {
     display: inline-block;
     position: relative;
     margin: 0 auto 0 auto;
@@ -1205,7 +1312,7 @@ section#donde h5 {
     height: 40px;
     font-size: 16px;
   }
-  .footer .social-circle li i {
+  .social-circle li i {
     margin: 0;
     line-height: 40px;
     text-align: center;
@@ -1213,11 +1320,11 @@ section#donde h5 {
 }
 
 @media screen and (max-width: 350px) {
-  .footer ul.social-network li {
+  ul.social-network li {
     display: inline;
     margin: 0 2px;
   }
-  .footer .social-circle li a {
+  .social-circle li a {
     display: inline-block;
     position: relative;
     margin: 0 auto 0 auto;
@@ -1227,7 +1334,7 @@ section#donde h5 {
     height: 40px;
     font-size: 16px;
   }
-  .footer .social-circle li i {
+  .social-circle li i {
     margin: 0;
     line-height: 40px;
     text-align: center;
