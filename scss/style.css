@@ -244,20 +244,22 @@ header .logo {
   }
 }
 
-header .boton:hover {
-  font-weight: bold;
+header a {
+  text-decoration: none;
 }
 
-header .boton::before {
+header a:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header a::before {
   display: block;
   content: attr(title);
   font-weight: bold;
   height: 0;
   overflow: hidden;
   visibility: hidden;
-}
-
-header a {
   text-decoration: none;
 }
 
@@ -277,18 +279,21 @@ header .nav-header a {
 @media (max-width: 768px) {
   header .nav-header a {
     font-size: 13px;
+    text-decoration: none;
   }
 }
 
 header header li {
   display: inline-block;
   font-size: 0;
+  text-decoration: none;
 }
 
 header header li a {
   display: inline-block;
   text-align: center;
   font: "Roboto", sans-serif 16px;
+  text-decoration: none;
 }
 
 header .nav-header ul {
@@ -306,6 +311,8 @@ header .nav-header ul {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 0;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 @media (max-width: 768px) {
@@ -315,6 +322,13 @@ header .nav-header ul {
 }
 
 /*Main*/
+main {
+  /*== Removal Start
+        png images background
+        ==*/
+  /*== Removal End==*/
+}
+
 main h5 {
   font-size: 60px;
   height: 100vh;
@@ -337,6 +351,94 @@ main .TextSlider {
   -webkit-transition: all 1.25s ease 0s;
   transition: all 1.25s ease 0s;
   width: 4300px;
+}
+
+main .color_fondo {
+  background-color: #00429a;
+}
+
+main .reviews {
+  width: 600px;
+  height: 150px;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 0px auto;
+  position: relative;
+  -webkit-box-shadow: 0 0 10px -2px #ddd;
+          box-shadow: 0 0 10px -2px #ddd;
+}
+
+main .panel {
+  width: 100%;
+  max-height: 100%;
+  position: absolute;
+}
+
+main .PanelAct {
+  left: 0;
+}
+
+main .panel img {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  float: left;
+  margin: 25px;
+}
+
+main .panel:nth-of-type(1) img {
+  background: #12aedb;
+}
+
+main .panel:nth-of-type(2) img {
+  background: #db4646;
+}
+
+main .panel:nth-of-type(3) img {
+  background: #96c465;
+}
+
+main .panel p {
+  float: left;
+  width: 420px;
+  clear: right;
+  text-align: justify;
+  margin: 25px 0 10px 0;
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.2em;
+}
+
+main .panel h7 {
+  float: left;
+  width: 200px;
+  font-size: 14px;
+  color: #999;
+  font-weight: bold;
+  font-style: italic;
+}
+
+main .control {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+
+main .control span {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+main .ContActive {
+  background-color: #00429a;
 }
 
 /*Quienes somos*/
@@ -382,6 +484,7 @@ section#quien .TextAnimation2 {
 section#quien li {
   list-style: none;
   margin: 5%;
+  text-decoration: none;
 }
 
 section#quien h4 {
@@ -512,6 +615,7 @@ section#contacto p {
 section#contacto ul, section#contacto li {
   margin: 0px;
   list-style-type: none;
+  text-decoration: none;
 }
 
 section#contacto input {
@@ -993,6 +1097,7 @@ section#donde li {
   display: list-item;
   list-style-type: square;
   margin: 5%;
+  text-decoration: none;
 }
 
 section#donde h5 {
