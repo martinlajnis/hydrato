@@ -229,8 +229,10 @@ header {
   text-decoration: none;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
   z-index: 9;
+  margin-top: 0;
+  padding-top: 0;
+  
 }
 
 header .logo {
@@ -271,7 +273,7 @@ header .wa {
 
 header .nav-header a {
   color: #FFFFFF;
-  padding: 30px;
+  padding: 0px;
 }
 
 header header li {
@@ -282,7 +284,8 @@ header header li {
 header header li a {
   display: inline-block;
   text-align: center;
-  font: "Roboto", sans-serif 16px;
+  font: "Roboto", sans-serif 25px;
+  padding-top: 0;
 }
 
 header .nav-header ul {

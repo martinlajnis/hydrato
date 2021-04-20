@@ -231,6 +231,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 9;
+  margin: 0;
 }
 
 header .logo {
@@ -273,13 +274,14 @@ header .wa {
 
 header .nav-header a {
   color: #FFFFFF;
-  padding: 30px;
+  padding: 0px 30px;
 }
 
 @media (max-width: 768px) {
   header .nav-header a {
     font-size: 13px;
     text-decoration: none;
+    padding: 0px 30px;
   }
 }
 
@@ -353,8 +355,35 @@ main .TextSlider {
   width: 4300px;
 }
 
+main .splashcontainer {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  main .splashcontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+
 main .color_fondo {
   background-color: #00429a;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .reviews {
@@ -371,7 +400,7 @@ main .reviews {
 
 main .panel {
   width: 100%;
-  max-height: 100%;
+  height: 100%;
   position: absolute;
 }
 
@@ -408,6 +437,7 @@ main .panel p {
   font-size: 14px;
   color: #aaa;
   line-height: 1.2em;
+  z-index: 100;
 }
 
 main .panel h7 {
@@ -438,12 +468,17 @@ main .control span {
 }
 
 main .ContActive {
-  background-color: #00429a;
+  background-color: #00429a !important;
 }
 
 /*Quienes somos*/
 section#quien {
   background: #dddada;
+}
+
+section#quien img {
+  width: 100%;
+  height: auto;
 }
 
 section#quien .titulo {
@@ -499,6 +534,12 @@ section#quien h4 {
   text-align: center;
   margin: 3%;
   padding: 1%;
+}
+
+@media (max-width: 1200px) {
+  section#quien h4 {
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 768px) {
