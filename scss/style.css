@@ -267,8 +267,8 @@ header a::before {
 header .wa {
   width: 70px;
   position: fixed;
-  bottom: 40px;
-  right: 40px;
+  bottom: 7%;
+  right: 5%;
   z-index: 100;
 }
 
@@ -582,10 +582,6 @@ section#servicios{
     }
 }*/
 /*Servicios 2*/
-body {
-  margin-top: 20px;
-}
-
 /* Feature Box
 ---------------------*/
 .feature-box-1 {
@@ -701,7 +697,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #E0E0E0;
+  background: #e0e0e0;
   overflow: hidden;
 }
 
@@ -756,8 +752,8 @@ body {
           align-items: center;
   width: 10px;
   height: 90%;
-  background: #FFF;
-  color: #151E3F;
+  background: #fff;
+  color: #151e3f;
   -webkit-transition: all 0.9s ease;
   transition: all 0.9s ease;
 }
@@ -817,7 +813,12 @@ section#contacto a:hover {
   text-decoration: none;
 }
 
-section#contacto h1, section#contacto h2, section#contacto h3, section#contacto h4, section#contacto h5, section#contacto h6 {
+section#contacto h1,
+section#contacto h2,
+section#contacto h3,
+section#contacto h4,
+section#contacto h5,
+section#contacto h6 {
   margin: 0px;
 }
 
@@ -829,7 +830,8 @@ section#contacto p {
   margin: 0px;
 }
 
-section#contacto ul, section#contacto li {
+section#contacto ul,
+section#contacto li {
   margin: 0px;
   list-style-type: none;
   text-decoration: none;
@@ -845,7 +847,8 @@ section#contacto textarea {
   border: none;
 }
 
-section#contacto textarea:focus, section#contacto input:focus {
+section#contacto textarea:focus,
+section#contacto input:focus {
   border-color: transparent !important;
 }
 
@@ -1202,7 +1205,9 @@ section#contacto .select2-container .select2-selection--single .select2-selectio
   background-color: transparent;
 }
 
-section#contacto .select2-container--default .select2-selection--single .select2-selection__arrow {
+section#contacto .select2-container--default
+.select2-selection--single
+.select2-selection__arrow {
   height: 100%;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1228,7 +1233,7 @@ section#contacto .select2-selection__arrow b {
 }
 
 section#contacto .select2-selection__arrow::before {
-  content: '';
+  content: "";
   display: block;
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
@@ -1237,7 +1242,7 @@ section#contacto .select2-selection__arrow::before {
 }
 
 section#contacto .select2-selection__arrow::after {
-  content: '';
+  content: "";
   display: block;
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
@@ -1318,9 +1323,24 @@ section#donde li {
 }
 
 section#donde h5 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font: normal 18px "Roboto", sans-serif;
   margin: 10px;
+}
+
+section#donde2 .map-container-5 {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+section#donde2 .map-container-5 iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 /**Footer**/
@@ -1334,7 +1354,7 @@ section#donde h5 {
 
 /* footer social icons */
 .footer {
-  background-color: #FAFCFF;
+  background-color: #fafcff;
   padding: 20px 0;
   text-align: center;
 }
@@ -1352,7 +1372,7 @@ ul.social-network li {
 
 /* footer social icons */
 .social-network a.icoFacebook:hover {
-  background-color: #3B5998;
+  background-color: #3b5998;
 }
 
 .social-network a.icoTwitter:hover {
@@ -1360,11 +1380,11 @@ ul.social-network li {
 }
 
 .social-network a.icoMedium:hover {
-  background-color: #00AB6C;
+  background-color: #00ab6c;
 }
 
 .social-network a.icoQuora:hover {
-  background-color: #AA2200;
+  background-color: #aa2200;
 }
 
 .social-network a.icoLinkedin:hover {
@@ -1377,7 +1397,12 @@ ul.social-network li {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
 }
 
-.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i, .social-network a.icoMedium:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+.social-network a.icoRss:hover i,
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoMedium:hover i,
+.social-network a.icoVimeo:hover i,
+.social-network a.icoLinkedin:hover i {
   color: #fff;
 }
 
@@ -1398,7 +1423,8 @@ ul.social-network li {
   text-align: center;
 }
 
-.social-circle li a:hover i, .triggeredHover {
+.social-circle li a:hover i,
+.triggeredHover {
   -moz-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   -ms--transform: rotate(360deg);
@@ -1414,7 +1440,7 @@ ul.social-network li {
 }
 
 .social-circle a {
-  background-color: #CCD8EA;
+  background-color: #ccd8ea;
 }
 
 @media screen and (max-width: 500px) {
