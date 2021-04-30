@@ -13,12 +13,27 @@
 
 html body nav {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
+
+
+
 
 /*Body*/
 body {
   font-family: $main_font;
+  ul{
+    padding-left: 0;
+  }
 }
+
+// #carouselExampleIndicators{
+//   button{
+//     width: 10px;
+//   }
+// }
+
+
 
 /*Header Navbar*/
 header {
@@ -172,15 +187,28 @@ main {
   /*== Removal End==*/
 
   .panel p {
-    float: left;
-    width: 420px;
-    clear: right;
-    text-align: justify;
-    margin: 25px 0 10px 0;
-    font-size: 14px;
-    color: #aaa;
-    line-height: 1.2em;
-    z-index: 100;
+    @media (max-width: 768px) {
+      width: 420px;
+      clear: right;
+      text-align: justify;
+      margin: 25px 0 10px 0;
+      font-size: 14px;
+      color: #aaa;
+      line-height: 1.2em;
+      z-index: 100;
+    }
+    @media (min-width: 768px) {
+      float: left;
+      width: 420px;
+      clear: right;
+      text-align: justify;
+      margin: 25px 0 10px 0;
+      font-size: 14px;
+      color: #aaa;
+      line-height: 1.2em;
+      z-index: 100;
+    }
+
   }
   .panel h7 {
     float: left;
@@ -235,6 +263,7 @@ section#quien {
     background-image: $cuadrado_color;
     margin: auto;
     margin-bottom: 15px;
+    overflow-y: hidden;
   }
 
   .cuadrado2 {
@@ -244,6 +273,7 @@ section#quien {
     background-image: $cuadrado_color;
     margin: auto;
     margin-bottom: 15px;
+    overflow-y: hidden;
   }
 
   .TextAnimation {
@@ -264,8 +294,7 @@ section#quien {
     color: $header_color;
     font: $secondary_font bold;
     text-align: center;
-    margin: 3%;
-    padding: 1%;
+
     @media (max-width: 1200px) {
       font-size: 17px;
     }
@@ -335,6 +364,7 @@ section#servicios{
   transition: ease all 0.35s;
 }
 .feature-box-1 .icon {
+  overflow-y: hidden;
   width: 70px;
   height: 70px;
   line-height: 70px;
@@ -1000,6 +1030,10 @@ section#contacto {
     color: #333333;
     line-height: 1.2;
   }
+
+  span{
+    overflow-y: hidden;
+  }
 }
 
 /*Donde*/
@@ -1075,6 +1109,9 @@ ul.social-network {
 /* footer social icons */
 
 .social-network {
+  a{
+    overflow: hidden;
+  }
   a.icoFacebook:hover {
     background-color: #3b5998;
   }

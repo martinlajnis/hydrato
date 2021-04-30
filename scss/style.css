@@ -215,11 +215,16 @@ html body nav {
 
 html body nav {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /*Body*/
 body {
   font-family: "Roboto", sans-serif;
+}
+
+body ul {
+  padding-left: 0;
 }
 
 /*Header Navbar*/
@@ -428,16 +433,31 @@ main .panel:nth-of-type(3) img {
   background: #96c465;
 }
 
-main .panel p {
-  float: left;
-  width: 420px;
-  clear: right;
-  text-align: justify;
-  margin: 25px 0 10px 0;
-  font-size: 14px;
-  color: #aaa;
-  line-height: 1.2em;
-  z-index: 100;
+@media (max-width: 768px) {
+  main .panel p {
+    width: 420px;
+    clear: right;
+    text-align: justify;
+    margin: 25px 0 10px 0;
+    font-size: 14px;
+    color: #aaa;
+    line-height: 1.2em;
+    z-index: 100;
+  }
+}
+
+@media (min-width: 768px) {
+  main .panel p {
+    float: left;
+    width: 420px;
+    clear: right;
+    text-align: justify;
+    margin: 25px 0 10px 0;
+    font-size: 14px;
+    color: #aaa;
+    line-height: 1.2em;
+    z-index: 100;
+  }
 }
 
 main .panel h7 {
@@ -500,6 +520,7 @@ section#quien .cuadrado {
   background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
   margin: auto;
   margin-bottom: 15px;
+  overflow-y: hidden;
 }
 
 section#quien .cuadrado2 {
@@ -510,6 +531,7 @@ section#quien .cuadrado2 {
   background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
   margin: auto;
   margin-bottom: 15px;
+  overflow-y: hidden;
 }
 
 section#quien .TextAnimation {
@@ -532,8 +554,6 @@ section#quien h4 {
   color: #0e0d0d;
   font: "Poppins", sans-serif bold;
   text-align: center;
-  margin: 3%;
-  padding: 1%;
 }
 
 @media (max-width: 1200px) {
@@ -604,6 +624,7 @@ section#servicios{
 }
 
 .feature-box-1 .icon {
+  overflow-y: hidden;
   width: 70px;
   height: 70px;
   line-height: 70px;
@@ -1304,6 +1325,10 @@ section#contacto .select2-search--dropdown .select2-search__field {
   line-height: 1.2;
 }
 
+section#contacto span {
+  overflow-y: hidden;
+}
+
 /*Donde*/
 section#donde {
   color: #5bc0be;
@@ -1371,6 +1396,10 @@ ul.social-network li {
 }
 
 /* footer social icons */
+.social-network a {
+  overflow: hidden;
+}
+
 .social-network a.icoFacebook:hover {
   background-color: #3b5998;
 }
