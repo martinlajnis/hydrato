@@ -45,28 +45,48 @@
         <div><a class="wa" href="https://api.whatsapp.com/send?phone=5491140294641&text=%C2%A1Hola!%20Hablemos%20por%20WhatsApp" target="_blank"><img src="../img/whatsApp.png" alt="Whatsapp" height="50" width="50"></a>
         </a></div>
      </header>  
-     <main class="bodygallery">
-      <div class="wrapper">
-        <div class="media">
-        <div class="layer">
-            <p>Matronatación</p>
-          </div>
-        <img src="../img/bebe1.jpg" alt="Matronatación" />
-        </div>
-         <div class="media">
-        <div class="layer">
-            <p>Rehab en el agua</p>
-          </div>
-        <img src="../img/bebe2.jpg" alt="Rehabilitación acuática" />
-        </div>
-           <div class="media">
-        <div class="layer">
-            <p>Terapia Ocupacional</p>
-          </div>
-        <img src="../img/bebe3.jpg" alt="Terapia ocupacional" />
-        </div>
-        </div>
-     </main>
+     <section class="gallery min-vh-100">
+      <div class="container-lg">
+         <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+            <div class="col">
+               <img src="../img/bebe1.jpg" class="gallery-item" alt="gallery">
+            </div>
+            <div class="col">
+               <img src="../img/bebe2.jpg" class="gallery-item" alt="gallery">
+            </div>
+            <div class="col">
+               <img src="../img/bebe3.jpg" class="gallery-item" alt="gallery">
+            </div>
+            <div class="col">
+               <img src="../img/bebe4.jpg" class="gallery-item" alt="gallery">
+            </div>
+            <div class="col">
+               <img src="../img/bebe5.jpg" class="gallery-item" alt="gallery">
+            </div>
+            <div class="col">
+               <img src="../img/bebe6.jpg" class="gallery-item" alt="gallery">
+            </div>
+         </div>
+      </div>
+    
+    <!--termina la galeria-->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+     <div class="modal-content">
+       <div class="modal-header">
+         <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+          <!--en esta seccion interpreta el js que con la clase modal-img debe mostrarlo como modal-->
+          <img src="img/1.jpg" class="modal-img" alt="modal img">
+       </div>
+     </div>
+    </div>
+    </div>
+    </section>
        <!--footer-->
 <footer>
   <body>
