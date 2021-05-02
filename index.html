@@ -4,9 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Hydrato - Terapia ocupacional en el agua</title> 
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico"/> 
     <meta name="description" content="Matronatacion - Terapia - Hidroterapia Acuática">
-    <meta name="keywords" content="hidroterapia, terapia ocupacional, to, agua, matronatacion, natacion bebes, natacion niños, juegos acuaticos, clases natacion, agua, colonia niños"> 
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+    <meta name="keywords" content="hidroterapia, terapia ocupacional, to, agua, matronatacion, natacion bebes, natacion niños, juegos acuaticos, clases natacion, agua, colonia niños">
    <!--Link de bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="BS2/css/bootstrap.min.css">
@@ -23,24 +23,35 @@
     <!--Poppins-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-
-
 </head>
 <body>
   <div class="home">
     <header>
+      <!--Menú Desktop-->
      <nav class="nav-header">
         <ul>  
             <div class="logo"><a href="./index.html"><img src="img/logo.png" alt="Logo"></a>  
             </div>        
-            <li><a href="pages/quien.html">¿Quiénes somos?</a></li>
-            <li><a href="pages/servicios.html">Servicios</a></li>
-            <li><a href="pages/galeria.html">Galería</a></li> 
-            <li><a href="pages/contacto.html">Contacto</a></li>
-            <li><a href="pages/donde2.html">Ubicación</a></li>
+            <li><a class="d-none d-lg-inline d-xl-inline" href="pages/quien.html">¿Quiénes somos?</a></li>
+            <li><a class="d-none d-lg-inline d-xl-inline" href="pages/servicios.html">Servicios</a></li>
+            <li><a class="d-none d-lg-inline d-xl-inline" href="pages/galeria.html">Galería</a></li> 
+            <li><a class="d-none d-lg-inline d-xl-inline" href="pages/contacto.html">Contacto</a></li>
+            <li><a class="d-none d-lg-inline d-xl-inline" href="pages/donde2.html">Ubicación</a></li>
             <li><a class="ig" href="https://www.instagram.com/hydra.to/" target="_blank"><img src="img/iconoinstagram.svg" alt="Instagram" height="30" width="30"></a></li>
         </ul>
         </nav>
+        <!--Menú Mobile-->
+        <nav class="nav-header">
+          <ul>  
+              <li><a class="d-sm-inline d-md-inline d-lg-none d-xl-none" href="./index.html"><i class="fas fa-home-heart"></i></a></li>     
+              <li><a class="d-sm-inline d-md-inline d-lg-none d-xl-none" href="pages/quien.html"><i class="fas fa-info"></i></a></li>
+              <li><a class="d-sm-inline d-md-inline d-lg-none d-xl-none" href="pages/servicios.html"><i class="fas fa-hand-heart"></i></a></li>
+              <li><a class="d-sm-inline d-md-inline d-lg-none d-xl-none" href="pages/galeria.html"><i class="fal fa-photo-video"></i></a></li> 
+              <li><a class="d-sm-inline d-md-inline d-lg-none d-xl-none" href="pages/contacto.html"><i class="far fa-envelope"></i></a></li>
+              <li><a class="d-sm-inline d-md-inline d-lg-none d-xl-none" href="pages/donde2.html"><i class="far fa-location-arrow"></i></a></li>
+          </ul>
+          </nav>
+
         <div><a class="wa" href="https://api.whatsapp.com/send?phone=5491140294641&text=%C2%A1Hola!%20Hablemos%20por%20WhatsApp" target="_blank"><img src="img/whatsApp.png" alt="Whatsapp" height="50" width="50"></a>
         </a></div>
      </header>  
