@@ -1522,4 +1522,14 @@ ul.social-network li {
     text-align: center;
   }
 }
+
+.ubicacion {
+  background: #a64bf4;
+  background: -webkit- linear-gradient(45deg, #00dbde, #9232ff);
+  background: -o- linear-gradient(45deg, #00dbde, #9232ff);
+  background: -moz- linear-gradient(45deg, #00dbde, #9232ff);
+  background: linear-gradient(45deg, #00dbde, #9232ff);
+  text-align: center;
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
