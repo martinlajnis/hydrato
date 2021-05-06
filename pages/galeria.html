@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="BS2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="BS2/css/style.css">
     <!--Link de mi CSS-->
-    <link rel="stylesheet" href="../scss/style.css">
+    <link rel="stylesheet" href="../scss/stylegallery.css">
     <!--Link de FA-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Roboto original-->
@@ -28,65 +28,51 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 
 </head>
+<header>
+  <!--Menú Desktop-->
+ <nav class="nav-header">
+    <ul>  
+        <div class="d-none d-lg-inline d-xl-inline"><a href="../index.html"><img src="../img/logo.png" alt="Logo"></a>  
+        </div>        
+        <li><a class="d-none d-lg-inline d-xl-inline" href="./quien.html">¿Quiénes somos?</a></li>
+        <li><a class="d-none d-lg-inline d-xl-inline" href="./servicios.html">Servicios</a></li>
+        <li><a class="d-none d-lg-inline d-xl-inline" href="./galeria.html">Galería</a></li> 
+        <li><a class="d-none d-lg-inline d-xl-inline" href="./contacto.html">Contacto</a></li>
+        <li><a class="d-none d-lg-inline d-xl-inline" href="./donde2.html">Ubicación</a></li>
+        <li><a class="d-none d-lg-inline d-xl-inline" href="https://www.instagram.com/hydra.to/" target="_blank"><img src="../img/iconoinstagram.svg" alt="Instagram" height="30" width="30"></a></li>
+    </ul>
+    </nav>
+    <!--Menú Mobile-->
+    <nav class="nav-header">
+      <ul>  
+          <li><a class="d-sm-inline d-md-inline d-lg-none d-xl-none" href="../index.html"><img src="../img/home.png" alt=""> </a></li>     
+          <li><a class="d-sm-inline d-md-inline d-lg-none d-xl-none" href="./quien.html"><img src="../img/group.png" alt=""></a></li>
+          <li><a class="d-sm-inline d-md-inline d-lg-none d-xl-none" href="./servicios.html"><img src="../img/info.png" alt=""> </a></li>
+          <li><a class="d-sm-inline d-md-inline d-lg-none d-xl-none" href="./galeria.html"><img src="../img/gallery.png" alt=""></a></li> 
+          <li><a class="d-sm-inline d-md-inline d-lg-none d-xl-none" href="./contacto.html"><img src="../img/email.png" alt=""></a></li>
+          <li><a class="d-sm-inline d-md-inline d-lg-none d-xl-none" href="./donde2.html"><img src="../img/pin.png" alt=""></a></li>
+      </ul>
+      </nav>
+      <div><a class="wa" href="https://api.whatsapp.com/send?phone=5491140294641&text=%C2%A1Hola!%20Hablemos%20por%20WhatsApp" target="_blank"><img src="../img/whatsApp.png" alt="Whatsapp" height="50" width="50"></a>
+      </a></div>
+  </header>
 <body>
-    <header>
-     <nav class="nav-header">
-        <ul>  
-            <div class="logo"><a href="../index.html"><img src="../img/logo.png" alt="Logo"></a>  
-            </div>        
-            <li><a class="boton" href="./quien.html">¿Quiénes somos?</a></li>
-            <li><a class="boton" href="./servicios.html">Servicios</a></li>
-            <li><a class="boton" href="./galeria.html">Galería</a></li> 
-            <li><a class="boton" href="./contacto.html">Contacto</a></li>
-            <li><a class="boton" href="./donde2.html">Ubicación</a></li>
-            <li><a class="ig" href="https://www.instagram.com/hydra.to/" target="_blank"><img src="../img/iconoinstagram.svg" alt="Instagram" height="30" width="30"></a></li>
-        </ul>
-        </nav>
-        <div><a class="wa" href="https://api.whatsapp.com/send?phone=5491140294641&text=%C2%A1Hola!%20Hablemos%20por%20WhatsApp" target="_blank"><img src="../img/whatsApp.png" alt="Whatsapp" height="50" width="50"></a>
-        </a></div>
-     </header>  
-     <section class="gallery min-vh-100">
-      <div class="container-lg">
-         <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
-            <div class="col">
-               <img src="../img/bebe1.jpg" class="gallery-item" alt="gallery">
-            </div>
-            <div class="col">
-               <img src="../img/bebe2.jpg" class="gallery-item" alt="gallery">
-            </div>
-            <div class="col">
-               <img src="../img/bebe3.jpg" class="gallery-item" alt="gallery">
-            </div>
-            <div class="col">
-               <img src="../img/bebe4.jpg" class="gallery-item" alt="gallery">
-            </div>
-            <div class="col">
-               <img src="../img/bebe5.jpg" class="gallery-item" alt="gallery">
-            </div>
-            <div class="col">
-               <img src="../img/bebe6.jpg" class="gallery-item" alt="gallery">
-            </div>
-         </div>
-      </div>
-    
-    <!--termina la galeria-->
-    
-    <!-- Modal -->
-    <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-     <div class="modal-content">
-       <div class="modal-header">
-         <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
-         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-       </div>
-       <div class="modal-body">
-          <!--en esta seccion interpreta el js que con la clase modal-img debe mostrarlo como modal-->
-          <img src="img/1.jpg" class="modal-img" alt="modal img">
-       </div>
-     </div>
+  <main>  
+    <div class="container">
+      <img src="../img/bebe1.jpg">
+      <img src="../img/bebe2.jpg">
+      <img src="../img/bebe3.jpg">
+      <img src="../img/bebe4.jpg">
+      <img src="../img/bebe5.jpg">
+      <img src="../img/bebe6.jpg">
+      <img src="../img/bebe1.jpg">
+      <img src="../img/bebe2.jpg">
     </div>
-    </div>
-    </section>
+      
+  </main>
+</body>
+
+
        <!--footer-->
 <footer>
   <body>
